@@ -1,0 +1,59 @@
+{
+  "name": "trainhorn-calc",
+  "version": "1.0.0",
+  "description": "Zero-dependency train horn calculators: SPL vs distance (inverse-square, air absorption), air tank runtime (Boyle's law), compressor recovery and copper AWG by voltage drop. Library + CLI.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./cli": "./src/cli.js",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "trainhorn-calc": "bin/trainhorn-calc.js"
+  },
+  "files": [
+    "src/",
+    "bin/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18.3"
+  },
+  "keywords": [
+    "train-horn",
+    "air-horn",
+    "decibel",
+    "spl",
+    "inverse-square-law",
+    "sound-pressure-level",
+    "acoustics",
+    "air-tank",
+    "compressor",
+    "boyles-law",
+    "awg",
+    "wire-gauge",
+    "voltage-drop",
+    "calculator",
+    "cli"
+  ],
+  "homepage": "https://train-horn.com/tools/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/train-horn/trainhorn-calc-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/train-horn/trainhorn-calc-js/issues"
+  },
+  "author": "Train Horn (https://train-horn.com/)",
+  "license": "MIT",
+  "sideEffects": false
+}
